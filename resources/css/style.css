@@ -53,3 +53,28 @@ h1, h2, h3, h4, h5, h6
 {
 	font-weight: bold;
 }
+
+/* Headings retagged for a clean h1 > h2 outline keep their old look through
+   Bootstrap's .h2/.h3 size classes; this keeps them bold like the rule above. */
+.h1, .h2, .h3, .h4, .h5, .h6
+{
+	font-weight: bold;
+}
+
+/* Logo. index.html marks it up as the page's h1 (tagline included) and the
+   other pages as a div, so each page has exactly one h1. These rules keep it
+   rendering exactly like the original <h2> logo followed by the tagline. */
+
+#logo h1
+{
+	margin-bottom: 0px;
+}
+
+#logo .tagline
+{
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+}

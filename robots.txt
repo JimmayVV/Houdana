@@ -1,0 +1,17 @@
+# robots.txt for https://www.houdana.com/
+#
+# Every crawler may crawl the whole site, so it can appear in Google, Bing,
+# and AI search answers.
+#
+# AI crawlers: allowed. This is the owner's call. Blocking AI-training
+# crawlers has no effect on ordinary Google Search ranking. To opt out of
+# AI training while staying in Search, add blocks like:
+#   User-agent: Google-Extended
+#   Disallow: /
+#   User-agent: GPTBot
+#   Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.houdana.com/sitemap.xml
